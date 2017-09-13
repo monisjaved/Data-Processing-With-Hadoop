@@ -1,0 +1,9 @@
+*** PAIR CO-OCCURENCE ***
+ 
+chmod +x *.py
+hadoop jar /home/hadoop/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.6.4.jar --file pair_mapper.py --mapper pair_mapper.py --file pair_reducer.py --reducer pair_reducer.py --input <input folder name> --output <output folder name>
+
+*** STRIPE CO-OCCURENCE ***
+
+chmod +x *.py
+hadoop jar /home/hadoop/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.6.4.jar --file stripe_mapper.py --mapper stripe_mapper.py --file stripe_reducer.py --reducer stripe_reducer.py --input <input folder name> --output <output folder name>

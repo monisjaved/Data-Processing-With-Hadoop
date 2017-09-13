@@ -1,0 +1,9 @@
+*** TWO-GRAM ***
+
+chmod +x *.py
+hadoop jar /home/hadoop/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.6.4.jar --file mapper.py --mapper "mapper.py 2" --file la.lexicon.csv --file reducer.py --reducer reducer.py --input <input folder name> --output <output folder name> --numReduceTasks 10
+
+*** THREE-GRAM ***
+
+chmod +x *.py
+hadoop jar /home/hadoop/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.6.4.jar --file mapper.py --mapper "mapper.py 3" --file la.lexicon.csv --file reducer.py --reducer reducer.py --input <input folder name> --output <output folder name> --numReduceTasks 10

@@ -1,0 +1,2 @@
+chmod +x *.py
+hadoop jar /home/hadoop/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.6.4.jar --file lemma_mapper.py --mapper lemma_mapper.py --file la.lexicon.csv --file lemma_reducer.py --reducer lemma_reducer.py --input <input folder name> --output <output folder name>

@@ -1,0 +1,5 @@
+chmod +x *.py
+
+hadoop jar /home/hadoop/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.6.4.jar --file mapper.py --mapper mapper.py --file reducer.py --reducer reducer.py --input <input folder name> --output <output folder name>
+
+run Lab4-1.ipynb with update output folder and generate wordcloud
